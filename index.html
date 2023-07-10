@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+    <title>Calculatrice avec Javascripte</title>
+</head>
+<body>
+<br><br>
+<marquee behavior="alternate" direction="" class="h1">Veuillez entrez une opération</marquee>
+    <div class="calculator offset-2 col-8 bg-white">
+        <input class="btn btn form-control p-4" type="text" id="result" readonly>
+        <input class="bg-success rounded" type="button" value="1" onclick="appendToExpression('1')">
+        <input class="bg-success rounded" type="button" value="2" onclick="appendToExpression('2')">
+        <input class="bg-success rounded" type="button" value="3" onclick="appendToExpression('3')">
+        <input class="bg-success rounded" type="button" value="+" onclick="appendToExpression('+')">
+        <input class="bg-success rounded" type="button" value="4" onclick="appendToExpression('4')">
+        <input class="bg-success rounded" type="button" value="5" onclick="appendToExpression('5')">
+        <input class="bg-success rounded" type="button" value="6" onclick="appendToExpression('6')">
+        <input class="bg-success rounded" type="button" value="-" onclick="appendToExpression('-')">
+        <input class="bg-success rounded" type="button" value="7" onclick="appendToExpression('7')">
+        <input class="bg-success rounded" type="button" value="8" onclick="appendToExpression('8')">
+        <input class="bg-success rounded" type="button" value="9" onclick="appendToExpression('9')">
+        <input class="bg-success rounded" type="button" value="*" onclick="appendToExpression('*')">
+        <input class="bg-success rounded" type="button" value="0" onclick="appendToExpression('0')">
+        <input class="bg-success rounded" type="button" value="." onclick="appendToExpression('.')">
+        <input class="bg-success rounded" type="button" value="/" onclick="appendToExpression('/')">
+        <input class="bg-danger rounded" type="button" value="Effacer" onclick="clearExpression()">
+        <input class="bg-secondary rounded" type="button" value="=" onclick="evaluateExpression()">
+        
+      </div>
+    <script src="calculate.js"></script>
+</body>
+</html>
